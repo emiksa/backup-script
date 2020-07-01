@@ -2,5 +2,4 @@
 Simple python script for RDS encrypted backup and export to S3 bucket.
 Usage example: 
 
-
---db_instance grafana-test --s3_bucket 'se.test.upload.wh.geniussports.com' --kms_key '2e20af4f-52df-4d93-8723-3809a7990f8a' --iam_role_arn 'arn:aws:iam::239990938293:role/rds-s3-export-role'
+python rds_backup.py --db_instance <rds_instance_name> --s3_bucket <your_bucket_name> --kms_key <kms_key_used_for_encryption> --iam_role_arn <iam_role_arn>
