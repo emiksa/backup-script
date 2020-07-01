@@ -6,16 +6,13 @@ python rds_backup.py --db_instance <rds_instance_name> --s3_bucket <your_bucket_
 
 For the script to work properly you need to run it with a role tha has the following permissions:
 For RDS, the following permissions are required:
-rds:CopyDBClusterSnapshot - copies a database cluster snapshot
-rds:CopyDBSnapshot - copies a database snapshot that is in an available state.
-rds:CreateDBClusterSnapshot - creates a snapshot of a database cluster
-rds:CreateDBInstance - creates a database instance
-rds:DeleteDBClusterSnapshot - deletes a database cluster snapshot
-rds:DescribeDBClusters - provides information about the provisioned database clusters
-rds:DescribeDBClusterSnapshots - provides information about the database cluster snapshots
-rds:DeleteDBSnapshot - delete the database snapshot
-rds:DescribeDBInstances - provides information about the database instances
-rds:DescribeDBSnapshots - provides information about the database snapshots
+
+rds:CopyDBSnapshot
+rds:DescribeDBClusters 
+rds:DescribeDBClusterSnapshots 
+rds:DeleteDBSnapshot 
+rds:DescribeDBInstances 
+rds:DescribeDBSnapshots 
 
 For S3, the following permissions are required:
 s3:ListBucket
