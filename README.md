@@ -20,15 +20,23 @@ rds:DescribeDBInstances
 rds:DescribeDBSnapshots 
 
 For S3, the following permissions are required:
+
 s3:ListBucket
+
 s3:GetBucketLocation
+
 s3:PutObject*
+
 s3:GetObject*
+
 s3:DeleteObject*
 
 For KMS, the following permissions are required:
+
 kms:Decrypt
+
 kms:Encrypt
+
 kms:DescribeKey
 
 More: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html
