@@ -8,10 +8,15 @@ For the script to work properly you need to run it with a role tha has the follo
 For RDS, the following permissions are required:
 
 rds:CopyDBSnapshot
+
 rds:DescribeDBClusters 
+
 rds:DescribeDBClusterSnapshots 
+
 rds:DeleteDBSnapshot 
+
 rds:DescribeDBInstances 
+
 rds:DescribeDBSnapshots 
 
 For S3, the following permissions are required:
